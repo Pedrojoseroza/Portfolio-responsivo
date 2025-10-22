@@ -43,7 +43,7 @@ header nav ul {
 header nav ul li a.actual {
     background-color: black;
     color: white;
-    padding: 6px 8px;
+    padding: 8px 10px;
 }
 /*
 =====================================
@@ -59,11 +59,13 @@ section.introduction {
 section.introduction h1 {
     font-size: 5vw;
     width: 50%;
+    margin: 2vw 0 0 0;
 }
 section.introduction p {
     font-size: 2.5vw;
     line-height: 1.5;
     width: 50%;
+    margin: 2vw 0 0 0;
 }
 section.introduction h1 {
     font-weight: 350;   
@@ -75,5 +77,113 @@ section.introduction p {
     color: #5A5A5A;
 }
 section.introduction p strong {
+    font-weight: bold;
+}
+/*
+=====================================
+            Shop Ease
+=====================================
+*/
+.shopEase {
+    margin: 7vw auto 5vw auto;
+
+}
+.shopEase ul div {
+    display: flex;
+    justify-content: center;
+}
+.shopEase ul div > li {
+    width: 40vw;
+    background-color: #FFFFFE;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 35px;
+}
+.shopEase ul div li h2 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 0 0 2rem 2rem;
+}
+.shopEase ul div li:first-child p.img {
+    display: flex;
+    justify-content: center;
+}
+.shopEase ul div li:last-child p img {
+    margin: 0px 20px 30px 20px;
+}
+.shopEase ul div li p{
+ color: #757575;
+ font-size: 1.5vw;
+ line-height: 1.5;   
+}
+.shopEase ul div li ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+
+}
+    .shopEase ul div li ul li {
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 30px 0 0 25px;
+}
+.shopEase ul div li ul li p {
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+/*
+=====================================
+            Rodapé
+=====================================
+*/
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 8vw 0;
+}
+footer p
+{
+    background-color: #FFFFFF;
+    color: #7C7C7C;
+    text-align: center;
+    width: 90%;
+    padding: 1vw;
+    border-radius: 15px;
+}
+/*
+=====================================
+            ABOUT ME
+=====================================
+*/
+main.about {
+     display: flex;
+    margin: 0 auto 0 auto;
+    width: 82vw;
+    max-width: 1100px;
+}
+main.about h1 {
+    font-size: 5vw;
+    width: 50%;
+    margin: 2vw 0 0 0;
+}
+main.about p {
+    font-size: 2.5vw;
+    line-height: 1.5;
+    width: 50%;
+    margin: 2vw 0 0 0;
+}
+main.about h1 {
+    font-weight: 350;   
+}
+main.about h1 span {
+    font-weight: bold;
+}
+main.about p {
+    color: #5A5A5A;
+}
+main.about p strong {
     font-weight: bold;
 }
