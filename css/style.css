@@ -2,7 +2,7 @@
 
 :root {
   --main-bg-color: #f5f5f5;
-  font-size: clamp(0.9375rem, 0.9119rem + 0.2136vw, 3rem);
+  font-size: clamp(0.9375rem,calc(0.91rem + 0.8vw), 4rem);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -70,12 +70,12 @@ section.introduction {
 }
 
 section.introduction h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 section.introduction p {
-  font-size: 2.5rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+   line-height: 2rem;
 }
 
 section.introduction h1 {
@@ -119,15 +119,15 @@ section.introduction p strong {
 }
 
 .shopEase ul li h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 1rem 0;
 }
 
 .shopEase ul li p {
   color: #757575;
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 .shopEase ul li ul {
@@ -148,7 +148,7 @@ section.introduction p strong {
 .shopEase ul li ul li p {
   font-weight: bold;
   color: #1e1e1e;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
 }
 
 /*
@@ -182,12 +182,12 @@ main.about {
 }
 
 main.about h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 main.about p {
-  font-size: 2.5rem;
-  line-height: 1.5;
+   font-size: 1.5rem;
+   line-height: 2rem;
 }
 
 main.about h1 {
@@ -215,28 +215,21 @@ main.about p strong {
 section.introduction_projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto 0 auto;
+  margin: 4vw auto 2vw auto;
   max-width: 1200px;
 }
 
 section.introduction_projects h1 {
-  font-size: 5vw;
-  margin: 4vw 0 0 0;
-}
-
-section.introduction_projects p {
-  font-size: 2.5vw;
-  line-height: 1.5;
-  margin: 4vw 0 0 0;
-}
-
-section.introduction_projects h1 {
+  font-size: 3vw;
   font-weight: bold;
 }
 
 section.introduction_projects p {
-  color: #5a5a5a;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   color: #5a5a5a;
 }
+
 
 section.introduction_projects p strong {
   font-weight: bold;
@@ -262,13 +255,13 @@ section.list_projects ul li {
 }
 
 section.list_projects ul li h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 20px 0;
 }
 
 section.list_projects ul li p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #757575;
   margin: 30px 0;
 }
@@ -281,6 +274,7 @@ section.list_projects ul li img {
   text-align: center;
   border-radius: 20px;
   height: 90vh;
+  max-width: 100%;
 }
 
 /*
@@ -308,7 +302,7 @@ section.contact ul li {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   header nav ul {
     gap: 8px;
   }
@@ -327,52 +321,54 @@ section.contact ul li {
 =====================================
 */
   section.introduction {
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+    display: block;
+}
 
-  section.introduction h1 {
+section.introduction h1 {
     font-size: 3.5rem;
     margin: 0 20px 30px 20px;
-  }
+}
 
-  section.introduction p {
+section.introduction p {
     font-size: 1.5rem;
     margin: 0 20px 30px 20px;
-  }
+}
 
-  /*
+/*
 =====================================
-            ShopEase
+ShopEase
 =====================================
 */
-  section.shopEase {
+section.shopEase {
     margin: 0 0 0 0;
-  }
-  section.shopEase > ul {
+}
+section.shopEase > ul {
     grid-template-columns: 1fr;
     gap: 15px;
     margin: 0 20px 30px 20px;
-  }
-  section.shopEase > ul > li {
+}
+section.shopEase > ul > li {
     margin: 10px 0;
     padding: 20px 20px;
-  }
-  section.shopEase ul li h2 {
+}
+.shopEase > ul > li img {
+    max-width: 100%;
+}
+section.shopEase ul li h2 {
     font-size: 1.5rem;
     margin: 0 0 1.5rem 1rem;
-  }
-  section.shopEase ul li p img {
+}
+section.shopEase ul li p img {
     max-width: 80vw;
-  }
-  section.shopEase ul li p {
+}
+section.shopEase ul li p {
     font-size: 1rem;
-  }
-  section.shopEase ul li ul {
+}
+section.shopEase ul li ul {
     gap: 10px;
     
 }
-  section.shopEase ul li ul li {
+section.shopEase ul li ul li {
     margin: 10px 0 0 10px;
     padding: 8px 15px;
 }
@@ -380,25 +376,25 @@ section.shopEase ul li ul li p {
     font-size: 0.8rem;
 }
 
-  /*
+/*
 =====================================
-            Footer
-=====================================
-*/
-    footer {
-        width: 90%;    
-        padding: 4vw 2vw;
-    }
-     /*
-=====================================
-            About Me
+Footer
 =====================================
 */
-    main.about {
-      grid-template-columns: 1fr;
-      margin: 0 auto;
-    }
-    main.about h1 {
+footer {
+    width: 90%;    
+    padding: 4vw 2vw;
+}
+/*
+=====================================
+About Me
+=====================================
+*/
+main.about {
+    display: block;
+    margin: 0 auto;
+}
+main.about h1 {
         font-size: 3.5rem;
         margin: 0 20px 30px 20px;
     }
@@ -412,7 +408,7 @@ section.shopEase ul li ul li p {
 =====================================
 */
     section.introduction_projects {
-        grid-template-columns: 1fr;
+        display: block;
     }
     section.introduction_projects h1 {
         font-size: 3.5rem;
@@ -421,5 +417,37 @@ section.shopEase ul li ul li p {
     section.introduction_projects p {
             font-size: 1.5rem;
         margin: 0 20px 30px 20px;    
+    }
+
+        /*
+=====================================
+            Lista da pag Projetos
+=====================================
+*/
+    section.list_projects ul li {
+        padding: 7px 14px;
+        margin: 30px 20px;
+    }
+    section.list_projects ul li p {
+        font-size: 1rem;
+    }
+       /*
+=====================================
+            Seção de contatos
+=====================================
+*/
+    section.contact ul {
+        display: block;
+    }
+    section.contact ul li {
+        width: 80vw;
+        margin: 20px auto;
+        padding: 2vw;
+    }
+    section.contact ul li a {
+        font-size: 1.4rem;    
+    }
+    section.contact ul li a span {
+        margin: 0 10px 0 0;
     }
 }
